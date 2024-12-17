@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataMerge</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Aplicando o mesmo background para todo o body */
+        body {
+            background-image: url('images/pexels-nemuel-6424591.jpg'); /* Caminho da imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a área do body */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+            color: white; /* Define a cor padrão do texto */
+        }
+
+        .navbar {
+            background: rgba(29, 95, 3, 0.7); /* Fundo semitransparente para contraste */
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: #0fc531;
+        }
+
+        header {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
+        }
+        .card {
+            background: rgba(51, 215, 14, 0.5);
+            color: white;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            height: 350px; /* Defina uma altura fixa para todos os cards */
+        }
+
+        .card img {
+            width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+            height: 200px; /* Defina uma altura fixa para a imagem */
+            object-fit: cover; /* Faz a imagem preencher a área sem distorção */
+        }
+
+        .card-body {
+            flex-grow: 1; /* Faz o conteúdo da card crescer e preencher o espaço restante */
+        }
+
+        .card-content {
+            align-self: flex-end;
+            text-align: center;
+        }
+
+
+        footer {
+            background: rgba(0, 0, 0, 0.7); 
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/icon.png" alt="Bootstrap" width="30" height="24">
+                DataMerge
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-white py-5">
+        
+        <div class="container text-center py-5">
+            <h1 class="display-4">Sistema de Consolidação de Planilhas</h1>
+            <p class="lead">Envie suas planilhas Excel e receba um arquivo consolidado em segundos.</p>
+            <a href="/upload" class="btn btn-success">Consolidar Planilhas</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row d-flex align-items-stretch"> <!-- Flexbox aplicado -->
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4"> <!-- Classe h-100 para altura uniforme -->
+                        <img src="images/Click here-bro.svg"  class="card-img-top" alt="Fácil de Usar">
+                        <div class="card-body">
+                            <h5 class="card-title">Fácil de Usar ✨</h5>
+                            <p class="card-text">Envie suas planilhas com um clique e obtenha um arquivo consolidado rapidamente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4">
+                        <img src="images/Data extraction-bro.svg" class="card-img-top" alt="Padronização">
+                        <div class="card-body">
+                            <h5 class="card-title">Padronização 📑</h5>
+                            <p class="card-text">Unifique dados de diversas planilhas com colunas consistentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4">
+                        <img src="images/Web devices-rafiki.svg" class="card-img-top" alt="Disponível Online">
+                        <div class="card-body">
+                            <h5 class="card-title">Disponível Online 🌎</h5>
+                            <p class="card-text">Acesse o sistema de qualquer lugar e a qualquer momento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Sobre o Projeto</h2>
+            <p>Este sistema foi desenvolvido como uma solução prática para quem trabalha com múltiplos relatórios em Excel. Ele automatiza o processo de consolidação de planilhas, reduzindo erros e economizando tempo.</p>
+            <a href="https://github.com/seu-repositorio" target="_blank" class="btn btn-light">Ver no GitHub</a>
+        </div>
+    </section>
+    <section>
+        
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Junta lá. Todos os direitos reservados.</p>
+            <a href="#contact" class="text-white text-decoration-none">Contato</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
